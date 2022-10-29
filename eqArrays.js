@@ -1,16 +1,15 @@
 let eqArrays = (array1, array2) => {
-  let x = '';
+  if (array1.length !== array2.length) {
+    return false;
+  }
   for (let i = 0; i < array1.length; i++) {
-    for (let j = 0; j < array2.length; j++) {
-      if (array1[i] === array2[j]) {
-        x = true;
-      } else {
-        x = false;
-      }
+    if (array1[i] !== array2[i]) {
+      return false;
     }
   }
-  return x;
+  return true;
 };
+//remove all exceptions first, then return true for other cases.
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -21,6 +20,8 @@ const assertEqual = function(actual, expected) {
 };
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-// should pass
+// pass
 assertEqual(eqArrays([1, 0, 3], [1, 2, 3]), false);
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), false);
+// pass
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3, 6]), false);
+// pass

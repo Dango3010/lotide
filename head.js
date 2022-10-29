@@ -1,6 +1,5 @@
 let head = (array) => {
-  let x = array[0];
-  return x;
+  return array[0];
 }
 
 const assertEqual = function(x, expected) {

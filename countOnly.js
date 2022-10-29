@@ -5,7 +5,7 @@ const countOnly = function (allItems, itemsToCount) {
   for (let i = 0; i < allItems.length; i++) {
     for (const item in itemsToCount) {
       if (itemsToCount[item] && allItems[i] === item) { 
-        if (results[item]) {
+        if (results[item]) { // if the item keyword already has a value (1, 2 = true value), if not (0 = falsey value)
           results[item] += 1;
         } else {
           results[item] = 1; 

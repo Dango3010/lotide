@@ -1,14 +1,15 @@
-let eqArrays = (array1, array2) => {
+const assertArraysEqual = (array1, array2) => {
+  if (array1.length !== array2.length) {
+    return `the two arrays are not equal`;
+  };
   for (let i = 0; i < array1.length; i++) {
-    for (let j = 0; j < array2.length; j++) {
-      if (array1[i] === array2[j]) {
-        console.log('the two arrays are equal');
-      } else {
-        console.log('the two arrays are not equal');
-      }
+    if (array1[i] !== array2[i]) {
+      return `the two arrays are not equal`;
     }
   }
+  return `the two arrays are equal`;
 };
 
-eqArrays([1, 2, 3], [1, 2, 3]);
-eqArrays([1, 0, 3], [1, 2, 3]);
+console.log(assertArraysEqual([1, 2, 3], [1, 2, 3]));
+console.log(assertArraysEqual([1, 0, 3], [1, 2, 3]));
+console.log(assertArraysEqual([1, 0, 3], [1, 2, 3, 6]));

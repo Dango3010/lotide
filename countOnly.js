@@ -8,7 +8,9 @@ const countOnly = function (allItems, itemsToCount) {
         if (results[item]) {
           results[item] += 1;
         } else {
-          results[item] = 1;
+          results[item] = 1; 
+          // = create a keyword and assign the value of 1 at the same time
+          // for the first time in the results object
         }
       }
     }

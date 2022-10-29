@@ -19,7 +19,7 @@ const assertEqual = function(actual, expected) {
 };
 
 let a = countLetters('lighthouse in the house');
-console.log(a);
-assertEqual(a["l"], 1);
-assertEqual(a["h"], 4);
+
+assertEqual(a["t"], 2);
 assertEqual(a["u"], 2);
+assertEqual(a["e"], 3);

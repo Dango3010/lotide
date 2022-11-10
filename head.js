@@ -4,3 +4,4 @@ let head = (array) => {
 
 const assertEqual = require('./assertEqual');
 module.exports = head;
+

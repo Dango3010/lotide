@@ -11,17 +11,5 @@ let eqArrays = (array1, array2) => {
 };
 //remove all exceptions first, then return true for other cases.
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`assertion passed`);
-  } else {
-    console.log(`🛑 ${actual} !== ${expected}`);
-  }
-};
-
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-// pass
-assertEqual(eqArrays([1, 0, 3], [1, 2, 3]), false);
-// pass
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3, 6]), false);
-// pass
+const assertEqual = require('./assertEqual');
+module.exports = eqArrays;

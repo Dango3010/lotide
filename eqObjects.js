@@ -27,7 +27,7 @@ const eqObjects = function(object1, object2) {
   let arr2 = Object.keys(object2);
   if (arr1.length !== arr2.length) {
     return false;
-  } 
+  }
   for (let key of arr1) {
     if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
       let compare = eqArrays(object1[key], object2[key]);
@@ -39,13 +39,13 @@ const eqObjects = function(object1, object2) {
     }
   }
   return true;
-  // Our control flow onlly gets to the end of the loop if all the keys matched. 
+  // Our control flow onlly gets to the end of the loop if all the keys matched.
   // so we should return true at the end (after the loop)
 };
 
 const ab = { house: "1", b: "2" };
 const ba = { b: "2", a: "1" };
-assertEqual(eqObjects(ab, ba), true); 
+assertEqual(eqObjects(ab, ba), true);
 // not pass
 
 const abc = { a: "1", b: "2", c: "3" };

@@ -17,4 +17,6 @@ const mode = function(arr) {
   return maxnum;
 };
 
-console.log(mode([6,9,3,9,9,6,1,0,5])); //9
+console.log(mode([6,9,3,9, 9,6,1,0,5])); //9
+
+module.exports = mode;

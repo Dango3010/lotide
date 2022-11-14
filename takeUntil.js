@@ -36,3 +36,5 @@ const results1 = takeUntil(data1, x => x < 0);
 assertArraysEqual(results1, [ 1, 2, 5, 7, 2 ]);
 assertArraysEqual(results1, [ 1, 2, 5,]);
 assertArraysEqual(results1, []);
+
+module.exports = takeUntil;

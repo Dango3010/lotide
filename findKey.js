@@ -30,3 +30,4 @@ assertEqual(keyfound, "Blue Hill"); //pass
 assertEqual(keyfound, "noma"); //not pass
 assertEqual(keyfound, ''); //not pass
 
+module.exports = findKey;

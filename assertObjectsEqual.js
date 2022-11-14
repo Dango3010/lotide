@@ -46,3 +46,6 @@ const cd = { home: "1", d: ["8", 3] };
 const dc = { d: ["8", 3], home: "1" };
 assertObjectsEqual(cd, dc);
 // pass
+
+module.exports = eqObjects;
+module.exports = assertObjectsEqual;

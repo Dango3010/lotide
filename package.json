@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@dango3010/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lotide of dango3010",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Dango3010/lotide.git"
   },
-  "author": "",
+  "author": "dango3010",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Dango3010/lotide/issues"
@@ -22,5 +22,8 @@
   "devDependencies": {
     "chai": "^4.3.7",
     "mocha": "^9.2.2"
+  },
+  "dependencies": {
+    "my-package": "0.0.0"
   }
 }

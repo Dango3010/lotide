@@ -27,3 +27,5 @@ without(words, ["world"]);
 console.log(words);
 console.log(assertArraysEqual(words, ["hello", "world", "lighthouse"]));
 // result: are not equal
+
+module.exports = without;

@@ -39,3 +39,5 @@ const a = letterPositions('lighthouse in the house');
 assertArraysEqual(a['h'],[3, 5, 15, 18]);
 assertArraysEqual(a["o"], [6, 19]);
 assertArraysEqual(a["u"], [ 7, 20 ]);
+
+module.exports = letterPositions;
